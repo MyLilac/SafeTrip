@@ -199,5 +199,8 @@ Page({
       }
     })
   },
+  bindF: function (e) {
+    console.log(e)
+  }
 
 })

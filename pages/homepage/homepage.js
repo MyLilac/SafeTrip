@@ -315,6 +315,16 @@ Page({
       }
     })
   },
+  searchTour: function () {
+    wx.navigateTo({
+      url: '/pages/tourlist/tourlist',
+      success: function (res) {
+        // success
+      },
+      fail: function (res) {
+      }
+    })
+  },
   toMe: function () {
     wx.navigateTo({
       url: '/pages/me/me',

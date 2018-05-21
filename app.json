@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/test/test",
+    "pages/tourlist/tourlist",
     "pages/index/index",
     "pages/bootstrap/bootstrap",
     "pages/homepage/homepage",
@@ -9,9 +9,11 @@
     "pages/commentlist/commentlist",
     "pages/vote/vote",
     "pages/createtour/createtour",
+    "pages/tourdetails/tourdetails",
     "pages/comment/comment",
     "pages/moments/moments",
     "pages/video/video",
+    "pages/test/test",
     "pages/me/me"
   ],
   "window": {

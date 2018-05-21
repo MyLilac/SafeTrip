@@ -17,7 +17,7 @@
         <text>地点：<text style='color:#c0c0c0' >{{location}}</text></text>
       </view>
       <input class="input-text" name="name" placeholder='行程名称' placeholder-style="color:'#c0c0c0'" />
-      <textarea name="introduce" placeholder='简介' placeholder-style="color:'#c0c0c0'" class="input-textarea" />
+      <textarea name="introduce" bindfocus="bindF" placeholder='简介' placeholder-style="color:'#c0c0c0'" class="input-textarea" />
 
 
       <view class="check-date">
@@ -47,8 +47,6 @@
         </picker>
       </view>
     </view>
-
-
 
     <button class="submit-button" formType="submit" loading="{{loading}}" disabled="{{disabled}}">提交</button>
   </form>

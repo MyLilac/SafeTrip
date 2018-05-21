@@ -1,0 +1,25 @@
+<!--pages/tourdetails/tourdetails.wxml-->
+<view class='container' style=" background-image: url({{src}});">
+  <scroll-view scroll-y class='scroll-container'>
+    <view class='title-container'>
+      北京后海一日游
+    </view>
+    <view class='time-container'>
+      <text class='time-text'>始：2018-6-30 19:00</text>
+      <text class='time-text'>止：2018-7-02 19:00</text>
+    </view>
+
+    <view class='introduce-container'>
+      <text class='introduce-text'>北京后海是什刹海的一部分，是一片有水观山，垂柳拂岸的闲散之地，岸上的民居和居民，周边的王府和名人故居更为它铺陈着京味和历史的无穷韵味。人们来这里只为了，这里依然能够听到秋日里清脆的虫鸣，依然能看见老北京四合院建筑群的缩影，依然能咀嚼那似乎早已远去的皇家遗韵。</text>
+      <text class='introduce-text'>说是“海”，其实是一个巨大的人工湖，是旧时皇家独享的一泓清池。海地处北京市中心，距天安门仅有四、五站地，与著名的北海一水相连，与景山、故宫遥遥相对。沿海走着走着，一不留神就会看到碧瓦红墙。在那些高大庄严的大门外，只能看到院内高大森郁的树木。悠悠地透着神秘。据说，后海的水域连着故宫的龙脉，从古至今都是风水宝地。所以，历代的高僧们在这里修寺建庙，而王公大臣们则在岸边选址筑府造园，名人们也纷纷迁居湖畔，开始了后海边上最初的水岸生活。因此，俗语说，“先有什刹海，后有北京城”</text>
+    </view>
+    <view class='other-container'>
+      <text>联系人：谢先生</text>
+    </view>
+    <view class='other-container'>
+      <text>联系方式：1555555555555</text>
+    </view>
+
+  </scroll-view>
+
+</view>
