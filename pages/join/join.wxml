@@ -1,0 +1,29 @@
+<!--pages/moments/moments.wxml-->
+<view class='container'>
+
+    <view wx:if="{{is_idea == 'Y'}}" class='main-container'>
+      <text class='description-text'>描述：</text>
+      <text class='idea-text'>鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼</text>
+    </view>
+    <view wx:else class='no-main-container'>
+      <text class='no-description-text'>暂无描述</text>
+    </view>
+
+
+    <view class='comment-container'>
+      <text class='comment-text'>评论：</text>
+      <textarea bindinput="bindTextAreaInput"  name='idea' class='input-text' placeholder="此时的想法..." maxlength="-1" placeholder-style="color:#D3D3D3; font-size:35rpx;">
+      </textarea>
+    </view>
+
+    <view class='check-container'>
+      <button bindtap='submitAgree' class="check-btn" style='background-color: #93ea75;'>同意</button>
+      <button bindtap='submitDisagree' class="check-btn" style='background-color: #eb1a23;'>否决</button>
+      <button bindtap='submitUnknow' class="check-btn" >不清楚</button>
+    </view>
+
+    <!-- <view class='submit-container'>
+      <button formType="submit" class="submit-btn" style='background-color: {{first_check}};'>同意</button>
+    </view> -->
+
+</view>

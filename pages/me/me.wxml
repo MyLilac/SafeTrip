@@ -1,0 +1,115 @@
+<view class="{{mpage}} {{!ui.tStart? 'withAnimate': ''}}" style="left:{{ui.offsetLeft}}px;width: {{ui.windowWidth}}px; " bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" bindtap="handlerPageTap">
+
+  <scroll-view class="bg-container" bindscroll="handlerScroll" scroll-y style="height: 100%;">
+
+    <view class="container">
+      <view class="userinfo">
+
+        <image bindtap="handlerAvatarTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+      </view>
+
+    </view>
+    <view class='down-container'>
+      <view class='select-tabars'>
+        <view wx:if="{{first}}" class='select-tabar' bindtap='firstShow'>
+          <image class="select-image" src="/images/ikon-1.png"></image>
+          <text style='color: #0e0e68;'>待处理</text>
+        </view>
+        <view wx:else class='select-tabar' bindtap='firstShow'>
+          <image class="select-image" src="/images/ikon-1-s.png"></image>
+          <text style='color: #aaa;'>待处理</text>
+        </view>
+        <view wx:if="{{second}}" class='select-tabar' bindtap='secondShow'>
+          <image class="select-image" src="/images/ikon-2.png"></image>
+          <text style='color: #0e0e68;'>已处理</text>
+        </view>
+        <view wx:else class='select-tabar' bindtap='secondShow'>
+          <image class="select-image" src="/images/ikon-2-s.png"></image>
+          <text style='color: #aaa;'>已处理</text>
+        </view>
+        <view wx:if="{{third}}" class='select-tabar' bindtap='thirdShow'>
+          <image class="select-image" src="/images/ikon-3.png"></image>
+          <text style='color: #0e0e68;'>我的</text>
+        </view>
+        <view wx:else class='select-tabar' bindtap='thirdShow'>
+          <image class="select-image" src="/images/ikon-3-s.png"></image>
+          <text style='color: #aaa;'>我的</text>
+        </view>
+      </view>
+
+      <view class='down-scroll-view'>
+        <scroll-view scroll-y class='select-scroll'>
+          <navigator wx:for="{{vote_list}}" url="/pages/vote/vote?v_id={{item.vote_id}}" hover-class="navigator-hover">
+            <view class="vote_list_item" style="border-bottom:1px solid #ddd;">
+
+              <view class='item-left'>
+                <text wx:if="{{item.idea == ''}}" class="item-title" style=' height: 50rpx; color:#808080;'>请查看附件</text>
+                <text wx:else class="item-title" style=' height: 50rpx;'>{{item.idea}}</text>
+                <view class='item-title-down'>
+                  <text class="item-time">{{item.create_time}}</text>
+                  <image wx:if="{{item.have_mp3 == 'Y'}}" class="icon-image" src="/images/have-mp3.png"></image>
+                  <image wx:if="{{item.have_video == 'Y'}}" class="icon-image" src="/images/have-video.png"></image>
+                  <image wx:if="{{item.have_image == 'Y'}}" class="icon-image" src="/images/have-image.png"></image>
+                </view>
+              </view>
+              <view wx:if="{{item.is_abandon == 'Y'}}" class="section_book" style='background: #808080;'>
+                <text>废弃</text>
+              </view>
+
+              <view wx:elif="{{item.is_agree == 'W'}}" class="section_book" style='background: #f2da58;'>
+                <text>待定</text>
+              </view>
+
+              <view wx:elif="{{item.is_agree == 'N'}}" class="section_book" style='background: #FF6347;'>
+                <text>否决</text>
+              </view>
+
+              <view wx:elif="{{item.is_agree == 'Y'}}" class="section_book" style='background: #93ea75;'>
+                <text>同意</text>
+              </view>
+              <view wx:elif="{{item.is_agree == 'U'}}" class="section_book" style='background: #aaa;'>
+                <text>不知</text>
+              </view>
+
+              <view wx:else class="section_book" style='background: #65cbea;'>
+                <text>详情</text>
+              </view>
+
+            </view>
+          </navigator>
+
+        </scroll-view>
+      </view>
+
+
+    </view>
+  </scroll-view>
+</view>
+
+
+
+<!--左侧边栏-->
+<view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
+  <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
+    <view class='fake-view'>
+    </view>
+    <view class="one-menu" bindtap="selectTour">
+      <text class='one-text'>切换旅游团</text>
+    </view>
+    <!--跳转homepage-->
+    <navigator url="../homepage/homepage">
+      <view class="one-menu">
+        <text class='one-text'>返回首页</text>
+      </view>
+    </navigator>
+    <!--跳转homepage-->
+    <navigator url="../test/test">
+      <view class="one-menu">
+        <text class='one-text'>创建旅游路线</text>
+      </view>
+    </navigator>
+
+  </view>
+</view>

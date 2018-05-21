@@ -1,0 +1,17 @@
+<!--pages/comment/comment.wxml-->
+
+<view class="container">
+  <view class='user-container'>
+    <image class="userinfo-avatar" src="/images/user.png" background-size="cover"></image>
+    <view class='userinfo-container'>
+      <view>匿名用户</view>
+      <view class='time-class'>{{comment.the_time}}</view>
+    </view>
+
+  </view>
+
+  <view class='idea-text'>
+    <text>{{comment.idea}}</text>
+  </view>
+</view>
+

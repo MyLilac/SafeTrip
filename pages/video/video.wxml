@@ -1,0 +1,30 @@
+<!--pages/moments/moments.wxml-->
+<view class='container'>
+
+  <form bindsubmit="uploadVideo">
+    <view class='main-container'>
+
+      <textarea name='idea' class='input-text' placeholder="此时的想法..." maxlength="-1" placeholder-style="color:#D3D3D3; font-size:35rpx;">
+      </textarea>
+
+
+    </view>
+
+    <view class='video-container'>
+      <video wx:if="{{is_video}}" src="{{src}}" bindwaiting="videoLoading" binderror="videoError" controls></video>
+    </view>
+
+    <view wx:if="{{is_video}}" class='btn-container'>
+      <view class='mp3-btn-img' bindtap='delVideo'>
+        <image class="image-mp3" mode="aspectFill" src="/images/cha.png"></image>
+        <view class='mp3-btn-text'>
+          删除视频
+        </view>
+      </view>
+    </view>
+
+    <view class='submit-container'>
+      <button formType="submit" class="submit-btn">发表</button>
+    </view>
+  </form>
+</view>

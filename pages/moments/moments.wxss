@@ -1,0 +1,80 @@
+.main-container {
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.img-container {
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 50rpx;
+  margin-top: 50rpx;
+}
+
+.submit-container {
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.mp3-container {
+}
+
+.mp3-player {
+  width: 60%;
+}
+
+.image-blcok {
+  width: 28vw;
+  height: 28vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 2vw;
+}
+
+.input-text {
+  width: 100%;
+  height: 200rpx;
+}
+
+.mp3-btn-img {
+  padding-left: 20rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+  border-top: 1rpx solid #dcdcdc;
+  display: flex;
+}
+
+.mp3-btn-text {
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.image-mp3 {
+  margin: 20rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.submit-btn {
+  background-color: #93ea75;
+  color: #fff;
+}
+
+.mp3-father {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

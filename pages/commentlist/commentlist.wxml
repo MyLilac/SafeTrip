@@ -1,0 +1,62 @@
+<!--pages/commentlist/commentlist.wxml-->
+<view class="container">
+  <canvas canvas-id="pieCanvas" class="canvas"  bindtouchstart="touchHandler"></canvas>
+
+
+  <view class='down-container'>
+    <view class='select-tabar'>
+      <view class='select-item' style='background-color: {{select_color_1}}; color: {{in_color_1}};' bindtap='selectFirst'>
+        赞同{{agree_count}}/{{total_count}}
+      </view>
+      <view class='select-item' style='background-color: {{select_color_2}}; color: {{in_color_2}};' bindtap='selectSecond'>否决{{disagree_count}}/{{total_count}}</view>
+      <view class='select-item' style='background-color: {{select_color_3}}; color: {{in_color_3}};' bindtap='selectThird'>中立{{unknow_count}}/{{total_count}}</view>
+    </view>
+
+    <view wx:if="{{agree_show}}">
+      <view wx:for="{{agree}}" class="list_item" style="border-bottom:1px solid #ddd;" bindtap="toDetails" data-vcid="{{item.id}}">
+        <view class='item-left'>
+          <text wx:if="{{item.idea == ''}}" class="item-title" style='color:#808080;'>未作评论</text>
+          <text wx:else class="item-title">{{item.idea}}</text>
+          <text class="item-time">{{item.the_time}}</text>
+        </view>
+        <view wx:if="{{item.is_me == 'Y'}}" class="section_book">
+          <text>我</text>
+        </view>
+        <view wx:else class="section_book">
+          <text></text>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{disagree_show}}">
+      <view wx:for="{{disagree}}" class="list_item" style="border-bottom:1px solid #ddd;" bindtap="toDetails" data-vcid="{{item.id}}">
+        <view class='item-left'>
+          <text wx:if="{{item.idea == ''}}" class="item-title" style='color:#808080;'>未作评论</text>
+          <text wx:else class="item-title">{{item.idea}}</text>
+          <text class="item-time">{{item.the_time}}</text>
+        </view>
+        <view wx:if="{{item.is_me == 'Y'}}" class="section_book">
+          <text>我</text>
+        </view>
+        <view wx:else class="section_book">
+      
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{unknow_show}}">
+      <view wx:for="{{unknow}}" class="list_item" style="border-bottom:1px solid #ddd;" bindtap="toDetails" data-vcid="{{item.id}}">
+        <view class='item-left'>
+          <text wx:if="{{item.idea == ''}}" class="item-title" style='color:#808080;'>未作评论</text>
+          <text wx:else class="item-title">{{item.idea}}</text>
+          <text class="item-time">{{item.the_time}}</text>
+        </view>
+        <view wx:if="{{item.is_me == 'Y'}}" class="section_book">
+          <text>我</text>
+        </view>
+        <view wx:else class="section_book">
+          <text></text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

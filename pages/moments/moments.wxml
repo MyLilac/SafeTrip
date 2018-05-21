@@ -1,0 +1,36 @@
+<!--pages/moments/moments.wxml-->
+<view class='container'>
+  <form bindsubmit="uploadMoments">
+    <view class='main-container'>
+      <textarea name='idea' class='input-text' placeholder="此时的想法..." maxlength="-1" placeholder-style="color:#D3D3D3; font-size:35rpx;">
+      </textarea>
+    </view>
+
+    <view class='img-container'>
+      <image wx:for="{{pictures}}" class="image-blcok" bindtap="previewImage" data-index="{{index}}" mode="aspectFill" src="{{item}}"></image>
+      <image wx:if="{{pictures.length < 9 }}" bindtap="addImage" class="image-blcok" bindload="imageLoad" mode="aspectFill" src="/images/puls.png"></image>
+    </view>
+    <view class='mp3-father'>
+      <view wx:if="{{is_mp3}}" class='mp3-container'>
+        <audio class='mp3-player' poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+      </view>
+    </view>
+
+
+    <view class='btn-container'>
+      <view class='mp3-btn-img' bindtap='takeMp3'>
+        <image class="image-mp3" mode="aspectFill" src="/images/add_mp3_1.png"></image>
+        <view wx:if="{{is_mp3}}" class='mp3-btn-text'>
+          修改语音
+        </view>
+        <view wx:else class='mp3-btn-text'>
+          添加语音
+        </view>
+      </view>
+    </view>
+
+    <view class='submit-container'>
+      <button  formType="submit" class="submit-btn">发表</button>
+    </view>
+  </form>
+</view>

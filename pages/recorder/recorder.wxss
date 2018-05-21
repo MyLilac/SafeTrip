@@ -1,0 +1,150 @@
+/**index.wxss**/
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://oa-dev.hitadri.com/ciscn/image/pie_bg.png');
+  background-size: cover;
+}
+
+.title-container {
+  position: absolute;
+  top: 10%;
+  height: 90vw;
+  width: 100%;
+  text-align: center;
+}
+
+.title-container-1 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 130px;
+  color: #808080;
+}
+
+.title-container-2 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 130px;
+  color: #808080;
+}
+
+.title-container-3 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 130px;
+  color: red;
+}
+
+.voice-style {
+  display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 100px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-style {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.sound-style {
+  position: absolute;
+  width: 22.6px;
+  height: 36px;
+  margin-top: 12px;
+}
+
+/* 
+.left-yes {
+  width: 100rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 50rpx;
+  bottom: 50rpx;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #808080;
+  line-height: 80rpx;
+  border: 1rpx solid #c0c0c0;
+}
+
+.right-no {
+  width: 100rpx;
+  height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+  color: #808080;
+  border-radius: 15rpx;
+  border: 1rpx solid #c0c0c0;
+} */
+
+.left-yes {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 50rpx;
+  bottom: 50rpx;
+}
+
+.right-no {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+}
+
+/* .down-container{
+  height: 30vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+    background: #032e37;
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+
+.start-play {
+  margin-top: 15rpx;
+  width: 45%;
+  margin-right: 5%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #808080;
+  border-radius: 15rpx;
+  border: 1rpx solid #c0c0c0;
+}
+
+.change-play {
+  margin-top: 15rpx;
+  width: 45%;
+  margin-left: 5%;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #808080;
+  border-radius: 15rpx;
+  border: 1rpx solid #c0c0c0;
+}
+
+.btn-container {
+  width: 45%;
+  margin-left: 50%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+}

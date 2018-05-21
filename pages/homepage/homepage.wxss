@@ -1,0 +1,143 @@
+/* pages/homepage/homepage.wxss */
+
+/* pages/timetable/timetable.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.plus-sign {
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.many-tap {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0rpx;
+  margin: auto;
+  width: 100%;
+  height: 150rpx;
+  background-color: #d8bfd8;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.animation-button {
+  float: left;
+  line-height: 2;
+  width: 300rpx;
+  opacity: 0.6;
+  margin: 15rpx 12rpx;
+}
+
+.seclect-tap {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.seclect-tap-cancle {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+}
+
+.to-me {
+  position: absolute;
+  right: 10rpx;
+  top: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.map-search {
+  position: absolute;
+  right: 10rpx;
+  top: 140rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.map-location {
+  position: absolute;
+  right: 10rpx;
+  top: 240rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.map-way {
+  position: absolute;
+  right: 10rpx;
+  top: 340rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.img-plus-style {
+  height: 100rpx;
+  width: 100rpx;
+  position: absolute;
+  bottom: 250rpx;
+  right: 20rpx;
+  z-index: 100;
+}
+
+.img-style {
+  height: 120rpx;
+  width: 120rpx;
+  position: absolute;
+  bottom: 250rpx;
+  right: 20rpx;
+  opacity: 0;
+}
+
+.right-menu {
+  height: 100vh;
+  width: 150px;
+  left: 100vw;
+  position: absolute;
+  background: #032e37;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.one-button {
+  padding: 20rpx;
+  margin-bottom: 15rpx;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  background: #09b2bb;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.one-list {
+  padding: 20rpx;
+  margin-bottom: 15rpx;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.fake-view {
+  height: 150rpx;
+}

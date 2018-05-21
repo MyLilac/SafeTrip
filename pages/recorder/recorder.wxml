@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class='container'>
+
+  <view class='title-container'>
+    <view wx:if="{{is_mp3}}" class='mp3-container'>
+      <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{mp3tempFilePath}}" id="myAudio" controls loop></audio>
+      <view class='btn-container'>
+        <view class='start-play'>播放</view>
+
+        <view wx:if="{{is_coded}}" class='change-play' style='background-color:green;color:#fff' bindtap='coded'>已加密</view>
+        <view wx:else class='change-play' bindtap='coded'>变声加密</view>
+
+      </view>
+
+    </view>
+  </view>
+
+
+
+  <image class='left-yes' src="../../images/yes.png" bindtap='saveMp3'></image>
+
+  <image class='right-no' src="../../images/no.png" bindtap='cancelMp3'></image>
+
+  <view class='title-container-1' wx:if="{{speak_status==1}}">
+    <text>按住录音</text>
+  </view>
+  <view class='title-container-2' wx:if="{{speak_status==2}}">
+    <text>松手结束</text>
+  </view>
+
+  <view class='title-container-3' wx:if="{{speak_status==3}}">
+    <text>上滑取消</text>
+  </view>
+
+  <view class="voice-style" bindtouchstart="startSpeak" bindtouchend="stopSpeak" bindtouchmove="cancelSpeak">
+    <image class="bg-style" src="../../images/voice_icon_speaking_bg_normal.png"></image>
+    <image class="sound-style" src="../../images/voice_icon_speech_sound_1.png"></image>
+    <image wx:if="{{j==2}}" class="sound-style" src="../../images/voice_icon_speech_sound_2.png"></image>
+    <image wx:if="{{j==3}}" class="sound-style" src="../../images/voice_icon_speech_sound_3.png"></image>
+    <image wx:if="{{j==4}}" class="sound-style" src="../../images/voice_icon_speech_sound_4.png"></image>
+    <image wx:if="{{j==5}}" class="sound-style" src="../../images/voice_icon_speech_sound_5.png"></image>
+  </view>
+  <!-- </view> -->
+
+
+</view>

@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/bootstrap/bootstrap",
+    "pages/homepage/homepage",
+    "pages/recorder/recorder",
+    "pages/join/join",
+    "pages/commentlist/commentlist",
+    "pages/vote/vote",
+    "pages/createtour/createtour",
+    "pages/comment/comment",
+    "pages/moments/moments",
+    "pages/video/video",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#01080a",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  }
+}

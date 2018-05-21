@@ -1,0 +1,135 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  font-size: 35rpx;
+  color: #333;
+  background-image: url('https://oa-dev.hitadri.com/ciscn/image/pie_bg.png');
+  background-size: cover;
+  font-family: Helvetica, Arial, "Helvetica Neue", "Droid Sans", "Microsoft YaHei", sans-serif;
+}
+
+.canvas {
+  width: 100%;
+  color: #fff;
+  height: 250px;
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 60rpx;
+  color: #808080;
+}
+
+.it-text {
+  margin-top: 20rpx;
+  font-size: 33rpx;
+  color: #808080;
+}
+
+.item {
+  border-bottom: #ddd 3rpx solid;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-text {
+  margin-left: 30rpx;
+  color: #d73d3e;
+  font-size: 37rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.as-text {
+  margin-right: 30rpx;
+  color: #808080;
+  font-size: 37rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.submit-button {
+  margin-top: 50rpx;
+  font-size: 35rpx;
+  height: 80rpx;
+  width: 90%;
+  background-color: #d73d3e;
+  color: #fff;
+}
+
+.down-container {
+}
+
+.select-tabar {
+  border-top: #ddd 3rpx solid;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: #ddd 3rpx solid;
+}
+
+.select-item {
+  line-height: 80rpx;
+  text-align: center;
+  width: 33%;
+  border-left: #ddd 1rpx solid;
+  border-right: #ddd 1rpx solid;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+
+.list_item {
+  background-color: rgba(240, 248, 255, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10rpx 0rpx;
+  vertical-align: middle;
+  line-height: 80rpx;
+  font-size: 34rpx;
+}
+
+.section_book {
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 24rpx;
+  border-radius: 100%;
+  line-height: 80rpx;
+  color: #ffc0cb;
+  text-align: center;
+  margin-right: 10rpx;
+}
+
+.item-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+
+.item-time {
+  font-size: 22rpx;
+  line-height: 22rpx;
+  margin-top: 15rpx;
+  color: #aaa;
+}
+
+.item-title {
+  font-size: 38rpx;
+  line-height: 50rpx;
+  color: #696969;
+  width: 280rpx;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

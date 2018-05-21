@@ -1,0 +1,5 @@
+<view class='container'>
+  <!-- <canvas class="canvas-test" canvas-id="firstCanvas"></canvas> -->
+  <view class='title-text'>I made you strong backing...</view>
+  <button open-type="getUserInfo" class="button" lang="zh_CN" bindgetuserinfo="toHome">start</button>
+</view>

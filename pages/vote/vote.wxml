@@ -1,0 +1,49 @@
+<!--pages/moments/moments.wxml-->
+<view class='container'>
+  <view class='map-father-container'>
+    <view class='map-container'>
+      <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" style=" width: 100%; height:100%;  " markers="{{markers}}">
+      </map>
+    </view>
+  </view>
+
+  <view wx:if="{{is_idea == 'Y'}}" class='main-container'>
+    <text class='description-text'>描述：</text>
+    <text class='idea-text'>{{idea}}</text>
+  </view>
+  <view wx:else class='no-main-container'>
+    <text class='no-description-text'>暂无描述</text>
+  </view>
+
+  <view wx:if="{{is_image == 'Y'}}" class='img-container'>
+    <image wx:for="{{pictures}}" class="image-blcok" bindtap="previewImage" data-index="{{index}}" mode="aspectFill" src="{{item}}"></image>
+  </view>
+  <view class='mp3-father'>
+    <view wx:if="{{is_mp3  == 'Y'}}" class='mp3-container'>
+      <audio class='mp3-player' poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{mp3_src}}" id="myAudio" controls loop></audio>
+    </view>
+  </view>
+  <view wx:if="{{is_video  == 'Y'}}" class='video-container'>
+    <video src="{{video_src}}" bindwaiting="videoLoading" binderror="videoError" controls></video>
+  </view>
+
+
+  <view wx:if="{{can_join  == 'Y'}}" class='btn-container'>
+    <view class='mp3-btn-img' bindtap='joinVote'>
+      <image class="image-mp3" mode="aspectFill" src="/images/join.png"></image>
+      <view class='mp3-btn-text'>
+        参与投票
+      </view>
+    </view>
+  </view>
+
+  <view wx:else class='btn-container'>
+    <view class='mp3-btn-img' bindtap='showCommentList'>
+      <image class="image-mp3" mode="aspectFill" src="/images/join.png"></image>
+      <view class='mp3-btn-text'>
+        查看投票详情
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,348 @@
+/* pages/add/add.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://oa-dev.hitadri.com/ciscn/image/pie_bg.png');
+  background-size: cover;
+}
+
+.text-span {
+  margin-top: 10rpx;
+  color: #d73d3e;
+}
+
+.text-span-serch {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  color: #d73d3e;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100rpx;
+  font-weight: 600;
+  background-color: #eee;
+  border-bottom-color: #d2dcde;
+  border-bottom-style: solid;
+  border-bottom-width: 3rpx;
+}
+
+.down-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20rpx;
+}
+
+.input-text {
+  margin-top: 10rpx;
+  width: 100%;
+  border-color: #d2dcde;
+  border-style: solid;
+  border-width: 3rpx;
+  border-radius: 10rpx;
+  height: 80rpx;
+}
+
+.input-textarea {
+  margin-top: 10rpx;
+  width: 100%;
+  border-color: #d2dcde;
+  border-style: solid;
+  border-width: 3rpx;
+  border-radius: 10rpx;
+  height: 240rpx;
+}
+
+.input-placeholder {
+  font-size: 35rpx;
+}
+
+.text-weeks {
+  margin-top: 20rpx;
+}
+
+.text-days {
+  margin-top: 20rpx;
+}
+
+.text-times {
+  margin-top: 20rpx;
+}
+
+/*周数*/
+
+.table-weeks {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+  width: 640rpx;
+  border-style: solid;
+  border-color: #d2dcde;
+  border-width: 3rpx;
+  border-radius: 10rpx;
+  height: 140rpx;
+}
+
+.table-weeks-row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 71rpx;
+}
+
+.table-weeks-row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 70rpx;
+}
+
+.table-weeks-items-row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-bottom-style: solid;
+  border-bottom-width: 3rpx;
+  border-color: #d2dcde;
+}
+
+.table-weeks-items-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-color: #d2dcde;
+}
+
+/*周数微调左右*/
+
+.table-weeks-items1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72rpx;
+  height: 70rpx;
+  border-top-left-radius: 10rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-bottom-style: solid;
+  border-bottom-width: 3rpx;
+  border-color: #d2dcde;
+}
+
+.table-weeks-items9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-style: solid;
+  border-bottom-width: 3rpx;
+  border-color: #d2dcde;
+}
+
+.table-weeks-items10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72rpx;
+  height: 70rpx;
+  border-bottom-left-radius: 10rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-color: #d2dcde;
+}
+
+.table-weeks-items18 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  border-bottom-right-radius: 10rpx;
+  border-color: #d2dcde;
+}
+
+/*天数微调左右*/
+
+.table-days {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+  width: 640rpx;
+  height: 90rpx;
+  border-style: solid;
+  border-color: #d2dcde;
+  border-width: 3rpx;
+  border-radius: 10rpx;
+}
+
+.table-days-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90rpx;
+  height: 90rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-color: #d2dcde;
+}
+
+.table-days-items0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90rpx;
+  height: 90rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+  border-color: #d2dcde;
+}
+
+.table-days-items6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90rpx;
+  height: 90rpx;
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+  border-color: #d2dcde;
+}
+
+.table-days-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*节数*/
+
+.table-times {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+  width: 640rpx;
+  height: 106rpx;
+  border-style: solid;
+  border-color: #d2dcde;
+  border-width: 3rpx;
+  border-radius: 10rpx;
+}
+
+.table-times-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105rpx;
+  height: 105rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-color: #d2dcde;
+}
+
+.table-times-items0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107rpx;
+  height: 105rpx;
+  border-right-style: solid;
+  border-right-width: 3rpx;
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+  border-color: #d2dcde;
+}
+
+.table-times-items5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107rpx;
+  height: 105rpx;
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+  border-color: #d2dcde;
+}
+
+.table-times-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.submit-button {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 35rpx;
+  height: 80rpx;
+  width: 640rpx;
+  background-color: #f66;
+  color: #fff;
+}
+
+.add-other-button {
+  margin-top: 50rpx;
+  font-size: 35rpx;
+  height: 80rpx;
+  width: 640rpx;
+  color: #d2dcde;
+  background-color: #fff;
+}
+
+.delete-text {
+  margin-top: 30rpx;
+  text-align: center;
+  color: #d2dcde;
+  font-size: 30rpx;
+}
+
+.check-date {
+  margin-top: 20rpx;
+}
+
+.text-date {
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  color: #c0c0c0;
+}
+
+.map-container {
+  height: 200px;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  width: 730rpx;
+}
+
+.map-father-container {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background-color: #c0c0c0;
+}
