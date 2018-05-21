@@ -3,9 +3,9 @@ var app = getApp()
 var tid;
 Page({
   data: {
-    check_date: '2018-06-01',
-    start_time: '12:00',
-    end_time: '12:00',
+    check_date: '选择日期',
+    start_time: '开始时间',
+    end_time: '结束时间',
     index: 0,
     loading: false,
     disabled: false,
@@ -13,9 +13,11 @@ Page({
     start_end: '23:59',
     longitude: 113.324520,
     latitude: 23.099994,
-    location: '点击搜索',
+    location: '搜索地点',
     markers: [],
-    controls: []
+    controls: [],
+    input_cls: '',
+    text_area_cls:''
   },
 
   /**
@@ -199,8 +201,29 @@ Page({
       }
     })
   },
-  bindF: function (e) {
+
+  input_focus:function (e) {
     console.log(e)
+    this.setData({
+      input_cls: 'focus'
+    })
+  },
+  input_blur: function (e) {
+    console.log(e)
+    this.setData({
+      input_cls: ''
+    })
+  },
+  text_area_focus: function (e) {
+    this.setData({
+      text_area_cls: 'focus'
+    })
+  },
+  text_area_blur: function (e) {
+    this.setData({
+      text_area_cls: ''
+    })
+
   }
 
 })
