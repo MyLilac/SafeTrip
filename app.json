@@ -1,7 +1,5 @@
 {
   "pages": [
-        "pages/test/test",
-    "pages/tourlist/tourlist",
     "pages/index/index",
     "pages/bootstrap/bootstrap",
     "pages/homepage/homepage",
@@ -14,7 +12,8 @@
     "pages/comment/comment",
     "pages/moments/moments",
     "pages/video/video",
-  
+    "pages/tourlist/tourlist",
+    "pages/test/test",
     "pages/me/me"
   ],
   "window": {
