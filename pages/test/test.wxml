@@ -4,52 +4,31 @@
 <view class="container">
 
 
-  <view class='map-father-container'>
+   <view class='map-father-container'>
     <view class='map-container'>
       <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" style=" width: 100%; height:100%;  " markers="{{markers}}" polyline="{{polyline}}" controls="{{controls}}" bindmarkertap="markTap">
 
       </map>
     </view>
-  </view>
+  </view> 
   <form class="form-group" bindsubmit="formSubmit">
     <view class="down-container">
-      <view class='text-span-serch' bindtap="searchLocation">
-        <text>地点：<text style='color:#c0c0c0' >{{location}}</text></text>
-      </view>
-      <input class="input-text" name="name" placeholder='行程名称' placeholder-style="color:'#c0c0c0'" />
-      <textarea name="introduce" placeholder='简介' placeholder-style="color:'#c0c0c0'" class="input-textarea" />
-
-
-      <view class="check-date">
-        <picker name='check_date' mode="date" value="{{check_date}}" start="2018-1-1" end="2200-1-23" bindchange="datePickerChange">
-          <view class="picker">
-            <text class='text-span'>日期：</text>
-            <text class='text-date'>{{check_date}}</text>
-          </view>
+      <button class='search-location-button' bindtap='searchLocation'>{{location}}</button>
+      <input class="input-text, {{input_cls}}" name="name" placeholder='行程名称' placeholder-class="input-placeholder" bindblur='input_blur' bindfocus='input_focus' />
+      <textarea name="introduce" placeholder='行程简介' placeholder-class="input-placeholder" bindfocus='text_area_focus'  bindblur='text_area_blur' class="input-textarea, {{text_area_cls}}" />
+      <view class='picker-container'>
+        <picker name='check_date'class="picker_cls" mode="date" value="{{check_date}}" start="2018-1-1" end="2200-1-23" bindchange="datePickerChange">
+            {{check_date}}
         </picker>
-      </view>
-      <view class="check-date">
-        <picker name='start_time' mode="time" value="{{time}}" start="00:00" end="{{start_end}}" bindchange="startTimePickerChange">
-          <view class="picker">
-            <text class='text-span'>开始：</text>
-            <text class='text-date'>{{start_time}}</text>
-          </view>
+        <picker name='start_time' class="picker_cls" mode="time" value="{{time}}" start="00:00" end="{{start_end}}" bindchange="startTimePickerChange">
+            {{start_time}}
         </picker>
-      </view>
-
-      <view class="check-date">
-        <picker name='end_time' mode="time" start="{{end_start}}" end="23:59" value="{{time}}" bindchange="endTimePickerChange">
-
-          <view class="picker">
-            <text class='text-span'>结束：</text>
-            <text class='text-date'>{{end_time}}</text>
-          </view>
+        <picker name='end_time' class="picker_cls"  mode="time" start="{{end_start}}" end="23:59" value="{{time}}" bindchange="endTimePickerChange">
+            {{end_time}}
         </picker>
-      </view>
+        </view>
+        <button class="submit-button" formType="submit" loading="{{loading}}" disabled="{{disabled}}">提交</button>
     </view>
-
-
-
-    <button class="submit-button" formType="submit" loading="{{loading}}" disabled="{{disabled}}">提交</button>
+    
   </form>
 </view>
