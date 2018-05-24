@@ -110,6 +110,11 @@
         <text class='one-text'>创建旅游路线</text>
       </view>
     </navigator>
-
+    <!--跳转homepage-->
+    <navigator url="../grade/grade">
+      <view class="one-menu">
+        <text class='one-text'>为当前旅行团打分</text>
+      </view>
+    </navigator>
   </view>
 </view>

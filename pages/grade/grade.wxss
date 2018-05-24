@@ -1,7 +1,42 @@
+/**index.wxss**/
+
+.star-image {
+  position: absolute;
+  bottom: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  src: "../../images/normal.png";
+}
+
+.item {
+  position: absolute;
+  bottom: 50rpx;
+  width: 50rpx;
+  height: 100rpx;
+}
+
+.star-text {
+  position: absolute;
+  left: 25rpx;
+  bottom: 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+}
+
+.yes-image {
+  position: absolute;
+  bottom: 50rpx;
+  width: 80rpx;
+  height: 80rpx;
+  src: "../../images/normal.png";
+}
+
 /* pages/tourdetails/tourdetails.wxss */
 
 .container {
   background-size: cover;
+  background-image: url(https://oa-dev.hitadri.com/ciscn/image/beijing.jpg);
   position: absolute;
   height: 100vh;
   width: 100vw;

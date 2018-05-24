@@ -15,7 +15,7 @@ Page({
     lastY: 0,
     speak_status: 1,
     is_mp3: false,
-    poster: '/images/seclect_mp3.png',
+    poster: 'https://oa-dev.hitadri.com/ciscn/image/mp3.png',
     name: '',
     author: '',
     mp3tempFilePath: '',
@@ -232,7 +232,7 @@ Page({
       is_coded: is_coded
     })
   },
-  playVoice:function() {
+  playVoice: function () {
     var tempFilePath = this.data.mp3tempFilePath
     wx.playVoice({
       filePath: tempFilePath

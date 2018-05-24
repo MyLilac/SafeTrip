@@ -13,6 +13,7 @@
     "pages/moments/moments",
     "pages/video/video",
     "pages/tourlist/tourlist",
+    "pages/grade/grade",
     "pages/test/test",
     "pages/me/me"
   ],

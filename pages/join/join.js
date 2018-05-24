@@ -8,7 +8,8 @@ Page({
    */
   data: {
     is_idea: 'Y',
-    text_value: ''
+    text_value: '',
+    idea: ''
   },
 
   /**
@@ -16,7 +17,11 @@ Page({
    */
   onLoad: function (options) {
     v_id = options.v_id
-    console.log(v_id)
+    var idea = options.idea
+    console.log(idea)
+    this.setData({
+      idea: idea
+    })
   },
 
   /**
@@ -106,7 +111,7 @@ Page({
                 })
 
                 setTimeout(function () {
-                  wx:wx.navigateBack({
+                  wx: wx.navigateBack({
                     delta: 1,
                   })
                 }, 1000);

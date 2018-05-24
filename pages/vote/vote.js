@@ -74,6 +74,7 @@ Page({
             can_join: vote.can_join,
             idea: vote.idea,
             mp3_src: vote.mp3_path,
+            video_src: vote.video_path,
             longitude: vote.longitude,
             latitude: vote.latitude,
             pictures: image,
@@ -158,8 +159,9 @@ Page({
   },
   joinVote: function () {
     console.log("join")
+    var idea = this.data.idea
     wx: wx.navigateTo({
-      url: '/pages/join/join?v_id=' + v_id,
+      url: '/pages/join/join?v_id=' + v_id + '&idea=' + idea,
       success: function (res) { },
       fail: function (res) { },
       complete: function (res) { },

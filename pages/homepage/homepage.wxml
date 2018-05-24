@@ -16,7 +16,7 @@
       <cover-view class='one-button' bindtap="searchTour">搜索旅行团</cover-view>
       <cover-view class='one-button' bindtap="searchLocation">搜索地点</cover-view>
       <cover-view class='one-button' bindtap="toWay">查看旅游路线</cover-view>
-      <cover-view class='one-button' bindtap="toMe">投票列表</cover-view>
+      <cover-view class='one-button' bindtap="toMe">查看投票列表</cover-view>
       <cover-view class='one-button' bindtap="toVote">发起投票</cover-view>
     </cover-view>
 

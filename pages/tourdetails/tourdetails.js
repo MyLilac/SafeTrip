@@ -66,5 +66,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  joinTour:function() {
+    wx.showModal({
+      title: '通知',
+      content: '已经提交申请，请等待旅游团审核。',
+      showCancel: false,
+      confirmText: "OK"
+    })
   }
 })

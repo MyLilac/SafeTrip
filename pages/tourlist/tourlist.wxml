@@ -5,11 +5,17 @@
       <view class="movie-score">
         <text>北京后海一日游</text>
       </view>
+      <view class="movie-star">
+        <text>4.8分</text>
+      </view>
     </view>
     <view class="movie" wx:key="id" data-id="1" data-src='https://oa-dev.hitadri.com/ciscn/image/haerbin.jpg' bindtap="getDetail">
       <image class="movie-cover" src="https://oa-dev.hitadri.com/ciscn/image/haerbin.jpg" mode="aspectFill"></image>
       <view class="movie-score">
         <text>哈尔滨索菲亚大教堂观光</text>
+      </view>
+      <view class="movie-star">
+        <text>4.5分</text>
       </view>
     </view>
     <view class="movie" wx:key="id" data-id="1" data-src='https://oa-dev.hitadri.com/ciscn/image/jiangsu.jpeg' bindtap="getDetail">
@@ -17,11 +23,17 @@
       <view class="movie-score">
         <text>登山踏云海</text>
       </view>
+      <view class="movie-star">
+        <text>4.5分</text>
+      </view>
     </view>
     <view class="movie" wx:key="id" data-id="1" data-src='https://oa-dev.hitadri.com/ciscn/image/taishan.jpg' bindtap="getDetail">
       <image class="movie-cover" src="https://oa-dev.hitadri.com/ciscn/image/taishan.jpg" mode="aspectFill"></image>
       <view class="movie-score">
         <text>会当凌绝顶，众山皆小</text>
+      </view>
+      <view class="movie-star">
+        <text>3.5分</text>
       </view>
     </view>
     <view class="movie" wx:key="id" data-id="1" data-src='https://oa-dev.hitadri.com/ciscn/image/xian.jpg' bindtap="getDetail">
@@ -29,17 +41,26 @@
       <view class="movie-score">
         <text>西安夜间游</text>
       </view>
+      <view class="movie-star">
+        <text>4.4分</text>
+      </view>
     </view>
     <view class="movie" wx:key="id" data-id="1" data-src='https://oa-dev.hitadri.com/ciscn/image/wuhan.jpg' bindtap="getDetail">
       <image class="movie-cover" src="https://oa-dev.hitadri.com/ciscn/image/wuhan.jpg" mode="aspectFill"></image>
       <view class="movie-score">
         <text>武汉</text>
       </view>
+      <view class="movie-star">
+        <text>3.8分</text>
+      </view>
     </view>
     <view class="movie" wx:key="id" data-id="1" data-src='https://oa-dev.hitadri.com/ciscn/image/beijing2.jpeg' bindtap="getDetail">
       <image class="movie-cover" src="https://oa-dev.hitadri.com/ciscn/image/beijing2.jpeg" mode="aspectFill"></image>
       <view class="movie-score">
         <text>北京</text>
+      </view>
+            <view class="movie-star">
+        <text>5.0分</text>
       </view>
     </view>
   </scroll-view>

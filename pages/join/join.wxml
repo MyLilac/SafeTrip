@@ -3,7 +3,7 @@
 
     <view wx:if="{{is_idea == 'Y'}}" class='main-container'>
       <text class='description-text'>描述：</text>
-      <text class='idea-text'>鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼鬼</text>
+      <text class='idea-text'>{{idea}}</text>
     </view>
     <view wx:else class='no-main-container'>
       <text class='no-description-text'>暂无描述</text>

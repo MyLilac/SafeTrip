@@ -17,7 +17,7 @@ Page({
   data: {
     pictures: [],
     is_mp3: false, // 是否存在语音
-    poster: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+    poster: 'https://oa-dev.hitadri.com/ciscn/image/mp3.png',
     name: '语音',
     author: '未知用户',
     src: '',

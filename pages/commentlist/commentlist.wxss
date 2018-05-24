@@ -8,7 +8,7 @@
   -webkit-user-select: none;
   font-size: 35rpx;
   color: #333;
-  background-image: url('https://oa-dev.hitadri.com/ciscn/image/pie_bg.png');
+  background-image: url('https://oa-dev.hitadri.com/ciscn/image/pie_bg.jpg');
   background-size: cover;
   font-family: Helvetica, Arial, "Helvetica Neue", "Droid Sans", "Microsoft YaHei", sans-serif;
 }
